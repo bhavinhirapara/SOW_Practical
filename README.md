@@ -104,9 +104,3 @@ The application will start, opening automatically in your browser at: `http://lo
    - Choose a **Kanban** project template if you want continuous flow (the app will sync issues and epics, and gracefully log board sprint skips).
 3. Generate an API Token from your [Atlassian API Tokens page](https://id.atlassian.com/manage-api-tokens).
 4. Enter your credentials in Stage 5 of the app, test the connection, and run the sync.
-
-### 4. Running Automated Tests
-Verify backend database CRUD and mock Jira integrations:
-```bash
-uv run python -m unittest backend/tests/test_flow.py
-```
