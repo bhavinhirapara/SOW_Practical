@@ -257,6 +257,12 @@ elif st.session_state.active_project_id:
             with col_id3:
                 st.markdown(f"<div class='glass-card'><strong>Vendor Name:</strong><br/><span style='font-size:1.1rem; font-weight:600;'>{data.get('vendor_name', 'N/A')}</span></div>", unsafe_allow_html=True)
                 
+            # Transcript Summary
+            summary = data.get("transcript_summary", "")
+            if summary:
+                with st.expander("📝 Transcript Discovery Summary", expanded=True):
+                    st.markdown(f"<div style='font-size:0.95rem; line-height:1.6; color:var(--text-main);'>{summary}</div>", unsafe_allow_html=True)
+                    
             # Confidence indicators
             with st.expander("🔍 Fact Extraction Confidence Analysis"):
                 for ci in data.get("confidence_indicators", []):

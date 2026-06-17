@@ -37,6 +37,7 @@ You MUST respond with a JSON object containing:
 - project_name (string)
 - client_name (string)
 - vendor_name (string)
+- transcript_summary (string: a concise, high-level summary of the meeting, highlighting the primary objectives and key outcomes)
 - modules (array of objects: {name, description, priority ("High"|"Medium"|"Low"), deadline})
 - requirements (array of objects: {description, module, type ("Functional"|"Non-Functional"|"Integration")})
 - integrations (array of objects: {name, description})
